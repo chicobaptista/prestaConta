@@ -10,7 +10,18 @@
   	<button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title> <img id="logo" src="../../../assets/imgs/logo.png"> Politico </ion-title>
+    <ion-title>
+    	<ion-grid>
+    		<ion-row>
+    			<ion-col id='titulo' col-10>
+    				Politico
+    			</ion-col>
+    			<ion-col col-2>
+    				<img id="logo" src="../../../assets/imgs/logo.png">
+    			</ion-col>
+    		</ion-row>
+    	</ion-grid>
+</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -144,11 +155,11 @@
 		</ion-card-header>
 		<ion-item>
     		<ion-label fixed>Valor</ion-label>
-    		<ion-input type="number" value='R$'></ion-input>
+    		<ion-input type="number" placeholder='R$'></ion-input>
   		</ion-item>
   		<ion-item>
     		<ion-label fixed>Descrição</ion-label>
-    		<ion-input type="text" value='Detalhe sua despesa'></ion-input>
+    		<ion-input type="text" placeholder='Detalhe sua despesa'></ion-input>
   		</ion-item>
   		<button ion-button block>
 			ENVIAR
@@ -209,14 +220,14 @@
       				<img src="../../../assets/imgs/expense-video.jfif">
 			    </ion-thumbnail>
 			    <h3>Produção de Vídeo</h3>
-			    <p>01/01/1989</p>
+			    <p>01/01/1989 R$5486,21</p>
 			</ion-item>
 			<ion-item>
     			<ion-thumbnail item-start>
       				<img src="../../../assets/imgs/expense-assistant.jpg">
 			    </ion-thumbnail>
 			    <h3>Honorários Cabo Eleitoral</h3>
-			    <p>30/02	/1989</p>
+			    <p>30/02/1989 R$880,00</p>
 			</ion-item>
 		</ion-list>
 	</ion-card>

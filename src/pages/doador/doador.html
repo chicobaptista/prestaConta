@@ -10,7 +10,18 @@
   	<button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title><img id="logo" src="../../../assets/imgs/logo.png">Doador</ion-title>
+    <ion-title>
+    	<ion-grid>
+    		<ion-row>
+    			<ion-col id='titulo' col-10>
+    				Doador
+    			</ion-col>
+    			<ion-col col-2>
+    				<img id="logo" src="../../../assets/imgs/logo.png">
+    			</ion-col>
+    		</ion-row>
+    </ion-grid>
+</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -109,11 +120,11 @@
 		<ion-item>
 			<ion-grid>
 				<ion-row>
-					<ion-col col-10>
+					<ion-col col-7>
 						<p>Ricardo Reis</p>
 					</ion-col>
-					<ion-col col-2>
-						<ion-icon id='refused' name='close-circle'></ion-icon>
+					<ion-col id='valorDoacao' col-5>
+						R$1.234,56  <ion-icon id='refused' name='close-circle'></ion-icon>
 					</ion-col>
 				</ion-row>
 			</ion-grid>
@@ -121,11 +132,11 @@
 		<ion-item>
 			<ion-grid>
 				<ion-row>
-					<ion-col col-10>
+					<ion-col col-7>
 						<p>Alberto Caeiro</p>
 					</ion-col>
-					<ion-col col-2>
-						<ion-icon id='accepted' name='checkmark-circle'></ion-icon>
+					<ion-col id='valorDoacao' col-5>
+						R$123,45  <ion-icon id='accepted' name='checkmark-circle'></ion-icon>
 					</ion-col>
 				</ion-row>
 			</ion-grid>
@@ -133,11 +144,11 @@
 		<ion-item>
 			<ion-grid>
 				<ion-row>
-					<ion-col col-10>
-						<p>Bernardo Soares</p>
+					<ion-col col-7>
+						<p>Bernardo Soares </p>
 					</ion-col>
-					<ion-col col-2>
-						<ion-icon id='attention' name='clock'></ion-icon>
+					<ion-col id='valorDoacao' col-5>
+						R$12.345,67  <ion-icon id='attention' name='clock'></ion-icon>
 					</ion-col>
 				</ion-row>
 			</ion-grid>
