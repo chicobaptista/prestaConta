@@ -1,9 +1,27 @@
 page-politico {
 
 }
+
+ion-content{
+	background-color: #059956!important;
+}
+
 .saldoCampanha{
 	text-align: center;
 }
+
+#attention{
+	color: orange;
+}
+
+#accepted{
+	color: green;
+}
+
+#refused{
+	color: red;
+}
+
 h3{
 	font-size: larger!important;
 }
