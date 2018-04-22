@@ -14,5 +14,86 @@
 
 
 <ion-content padding>
+	<!--Perfil Doador-->
+	<ion-card>
+		<ion-list>
+			<ion-item>
+				<ion-avatar>
+					<img src="img/avatar-joseBonifacio.png">
+				</ion-avatar>
+				<h3> Olá, José Bonifácio </h3>
+				<p> 12345 </p>
+			</ion-item>
+		</ion-list>
+	</ion-card>
 
+	<!--Limite Disponível para Doações-->
+	<ion-card>
+		<ion-card-header>
+			<h3>Limite Disponível para Doações</h3>
+		</ion-card-header>
+		<ion-item>
+			<p> R$ 12.345,67</p>
+		</ion-item>
+	</ion-card>
+
+	<!--Realizar Nova Doação-->
+	<ion-card>
+		<ion-card-header>
+			<h3>Realizar Nova Doação</h3>
+		</ion-card-header>
+		<ion-list>
+			<ion-item>
+		    	<ion-label>Partido</ion-label>
+		    		<ion-select [(ngModel)]="partido">
+				      	<ion-option value="prb">10-PRB</ion-option>
+				      	<ion-option value="pp">11-PP</ion-option>
+					    <ion-option value="pdt">12-PDT</ion-option>
+					    <ion-option value="ptb">14-PTB</ion-option>
+		    		</ion-select>
+		  	</ion-item>
+		  	<ion-item>
+		    	<ion-label>Candidato</ion-label>
+		    		<ion-select [(ngModel)]="candidato">
+				      	<ion-option value="Ricardo Reis">1010-Ricardo Reis</ion-option>
+				      	<ion-option value="Álvaro Campos">1111-Álvaro Campos</ion-option>
+					    <ion-option value="Alberto Caeiro">1212-Alberto Caeiro</ion-option>
+					    <ion-option value="Bernardo Soares">1414-Bernardo Soares</ion-option>
+		    		</ion-select>
+		  	</ion-item>
+		  	<ion-item>
+				<ion-avatar>
+					<img src="img/avatar-Ricardo Reis.png">
+				</ion-avatar>
+				<h3> Ricardo Reis</h3>
+				<p> 1010</p>
+			</ion-item>
+			<ion-item>
+	    		<ion-label fixed>Valor a ser doado (R$)</ion-label>
+	    		<ion-input type="number" value='R$'></ion-input>
+  			</ion-item>
+  			<ion-button>
+				ENVIAR
+			</ion-button>
+		</ion-list>
+	</ion-card>
+
+	<!--Minhas Doações-->
+	<ion-card>
+		<ion-card-header>
+			<h3>Minhas Doações</h3>
+		</ion-card-header>	
+		<ion-item>
+			<p>Ricardo Reis</p>
+			<ion-icon name='close-circle'></ion-icon>
+		</ion-item>
+		<ion-item>
+			<p>Alberto Caeiro</p>
+			<ion-icon name='checkmark-circle'></ion-icon>
+		</ion-item>
+		<ion-item>
+			<p>Bernardo Soares</p>
+			<ion-icon name='clock'></ion-icon>
+		</ion-item>
+	</ion-card>
 </ion-content>
