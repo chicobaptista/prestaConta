@@ -2,7 +2,6 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
 import { PoliticoPage } from '../pages/politico/politico';
 import { DoadorPage } from '../pages/doador/doador';
 import { ListPage } from '../pages/list/list';
@@ -13,7 +12,7 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = PoliticoPage;
+  rootPage: any = DoadorPage;
 
   pages: Array<{title: string, component: any}>;
 
