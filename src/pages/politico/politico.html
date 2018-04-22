@@ -17,13 +17,21 @@
 	<!--Perfil Político-->
 	<ion-card>
 		<ion-list>
-			<ion-item>
-				<ion-avatar>
-					<img src="img/avatar-joseBonifacio.png">
-				</ion-avatar>
-				<h3> Olá, José Bonifácio </h3>
-				<p> 12345 </p>
-			</ion-item>
+			<ion-grid>
+				<ion-item>
+					<ion-row>
+						<ion-col col-2>
+							<ion-avatar>
+								<img src="img/avatar-joseBonifacio.png">
+							</ion-avatar>
+						</ion-col>
+						<ion-col col-10>
+							<h3> Olá, Ricardo Reis</h3>
+							<p> 1212</p>
+						</ion-col>
+					</ion-row>
+				</ion-item>
+			</ion-grid>
 		</ion-list>
 	</ion-card>
 	<!--Saldo de Campanha-->
@@ -31,7 +39,7 @@
 		<ion-card-header>
 			<h3>Saldo de Campanha</h3>
 		</ion-card-header>
-		<ion-item>
+		<ion-item class='saldoCampanha'>
 			<p> R$ 123.456,78</p>
 		</ion-item>
 	</ion-card>
@@ -42,20 +50,44 @@
 			<h3>Propostas de Doação</h3>
 			<p>Aceitar ou recusar todas as propostas</p>
 		</ion-card-header>
-		<ion-button>
-			<ion-icon name='checkmark-circle'></ion-icon>
-		</ion-button>
-		<ion-button color='danger'>
-			<ion-icon name='close-circle'></ion-icon>
-		</ion-button>
+		<ion-grid>
+			<ion-row>
+				<ion-col col-6>
+					<button ion-button block>
+						<ion-icon name='checkmark-circle'></ion-icon>
+					</button>
+				</ion-col>
+				<ion-col col-6>
+					<button ion-button block color='danger'>
+						<ion-icon name='close-circle'></ion-icon>
+					</button>
+				</ion-col>
+			</ion-row>
+		</ion-grid>
 
 		<ion-item>
-			<p>José Souza</p>
-			<ion-icon name='arrow-dropright-circle'></ion-icon>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-10>
+						<p>Carlos Fulano</p>
+					</ion-col>
+					<ion-col col-2>
+						<ion-icon name='arrow-dropright-circle'></ion-icon>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
 		</ion-item>
 		<ion-item>
-			<p>Maria Silva</p>
-			<ion-icon name='arrow-dropright-circle'></ion-icon>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-10>
+						<p>Inês Beltrano</p>
+					</ion-col>
+					<ion-col col-2>
+						<ion-icon name='arrow-dropright-circle'></ion-icon>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
 		</ion-item>
 	</ion-card>
 
@@ -65,16 +97,40 @@
 			<h3>Histórico de Doações</h3>
 		</ion-card-header>	
 		<ion-item>
-			<p>Carlos Fulano</p>
-			<ion-icon name='close-circle'></ion-icon>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-10>
+						<p>Carlos Fulano</p>
+					</ion-col>
+					<ion-col col-2>
+						<ion-icon name='close-circle'></ion-icon>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
 		</ion-item>
 		<ion-item>
-			<p>Inês Beltrano</p>
-			<ion-icon name='checkmark-circle'></ion-icon>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-10>
+						<p>Inês Beltrano</p>
+					</ion-col>
+					<ion-col col-2>
+						<ion-icon name='checkmark-circle'></ion-icon>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
 		</ion-item>
 		<ion-item>
-			<p>Miguel Siclano</p>
-			<ion-icon name='clock'></ion-icon>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-10>
+						<p>Miguel Siclano</p>
+					</ion-col>
+					<ion-col col-2>
+						<ion-icon name='clock'></ion-icon>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
 		</ion-item>
 	</ion-card>
 
@@ -91,9 +147,9 @@
     		<ion-label fixed>Descrição</ion-label>
     		<ion-input type="text" value='Detalhe sua despesa'></ion-input>
   		</ion-item>
-  		<ion-button>
+  		<button ion-button block>
 			ENVIAR
-		</ion-button>
+		</button>
 	</ion-card>
 
 	<!--Situação de Solicitações-->
@@ -102,21 +158,48 @@
 			<h3>Situação de Solicitações</h3>
 		</ion-card-header>	
 		<ion-item>
-			<p>Impressão de Flyers</p>
-			<ion-icon name='close-circle'></ion-icon>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-10>
+						<p>Impressão de Flyers</p>
+					</ion-col>
+					<ion-col col-2>
+						<ion-icon name='close-circle'></ion-icon>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
 		</ion-item>
 		<ion-item>
-			<p>Fretar Jato</p>
-			<ion-icon name='checkmark-circle'></ion-icon>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-10>
+						<p>Fretar Jato</p>
+					</ion-col>
+					<ion-col col-2>
+						<ion-icon name='checkmark-circle'></ion-icon>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
 		</ion-item>
 		<ion-item>
-			<p>Aluguel Salão de Convenções</p>
-			<ion-icon name='clock'></ion-icon>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-10>
+						<p>Aluguel Salão de Convenções</p>
+					</ion-col>
+					<ion-col col-2>
+						<ion-icon name='clock'></ion-icon>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
 		</ion-item>
 	</ion-card>
 
 	<!--Extrato de Despesas-->
 	<ion-card>
+		<ion-card-header>
+			<h3>Extrato de Solicitações</h3>
+		</ion-card-header>	
 		<ion-list>
   			<ion-item>
     			<ion-thumbnail item-start>
