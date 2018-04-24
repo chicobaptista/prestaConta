@@ -75,13 +75,35 @@ export class PoliticoPage {
        {
           text: 'Sim',
           handler: () => {
-            console.log('Sim para todas clicked');
+            console.log('Nova despesa solicitada');
           }
         },
         {
           text: 'Não',
           handler: () => {
-            console.log('Não para todas clicked');
+            console.log('Nova despesa descartada');
+          }
+        }
+        ]
+    });
+    alert.present()
+   }
+
+   newDonationAlert() {
+    let alert = this.alerCtrl.create({
+      title: 'Confirma?',
+      message: 'Você tem certeza de que deseja aceitar esta doação?',
+      buttons: [
+       {
+          text: 'Sim',
+          handler: () => {
+            console.log('Sim para esta clicked');
+          }
+        },
+        {
+          text: 'Não',
+          handler: () => {
+            console.log('Não para esta clicked');
           }
         }
         ]
